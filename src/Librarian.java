@@ -1,4 +1,4 @@
-class Librarian extends User {
+public class Librarian extends User {
     Date hireDate;
     String employeeId;
     private Library library;
@@ -30,4 +30,5 @@ class Librarian extends User {
 
 
 }
+
 
