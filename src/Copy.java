@@ -1,19 +1,39 @@
+import java.util.*;
+
 public class Copy {
-String coypId;
-    String condition;
-    boolean isAvailable;
-    Book book;  
+    private String copyId;
+    private String condition;
+    private boolean isAvailable;
+    private Book book;
+    
+    // Constructor
+    public Copy(String copyId, String condition, Book book) {
+        this.copyId = copyId;
+        this.condition = condition;
+        this.book = book;
+        this.isAvailable = true;
+    }
 
     public boolean checkAvailability() {
-        // Implementation to check availability
+        // TODO: Implementation to check availability
         return isAvailable;
-    }public void updateCondition(String condition) {
-        // Implementation to update condition
+    }
+    
+    public void updateCondition(String condition) {
+        // TODO: Implementation to update condition
         this.condition = condition;
     }
-    public List<Book> getBook() {
-        // Implementation to get book details
-        return new ArrayList<>();
+    
+    public Book getBook() {
+        // TODO: Implementation to get book details
+        return book;
     }
+    
+    // Getters and setters
+    public String getCopyId() { return copyId; }
+    public String getCondition() { return condition; }
+    public boolean isAvailable() { return isAvailable; }
+    public void setAvailable(boolean available) { this.isAvailable = available; }
 }
+
 
